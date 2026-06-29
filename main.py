@@ -8,7 +8,7 @@ from fastapi import FastAPI
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.messages import AIMessage
 from langchain_core.runnables import RunnableLambda
-from langchain_openai import ChatOpenAI
+from langchain_community.chat_models import ChatOpenAI
 
 from langserve import add_routes
 from pydantic import BaseModel, Field  # Pydantic v2 కి అనుగుణంగా మార్చాము
